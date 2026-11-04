@@ -22,10 +22,10 @@ class JpaApplicationTests {
 @Test
 	void testRepository(){
 	ProductEntity productEntity = ProductEntity.builder()
-			.sku("sku-001")
-			.title("product 1")
-			.price(BigDecimal.valueOf(100))
-			.quantity(10)
+			.sku("sku-002")
+			.title("product 2")
+			.price(BigDecimal.valueOf(200))
+			.quantity(20)
 			.build();
 ProductEntity savedProductEntity=productRepository.save(productEntity);
 System.out.println(savedProductEntity);
